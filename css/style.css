@@ -8,6 +8,8 @@
   --intermediate-color: #2f303a;
   --accent-text-color: #2196f3;
   --button-color: #ffffff;
+  --svg-color: #afb1b8;
+  --footer-color: #ffffff;
 }
 
 body {
@@ -24,6 +26,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
 img {
@@ -89,13 +92,31 @@ img {
   margin-left: 50px;
 }
 
-.list-nav {
-  display: inline-block;
+.items-nav .list-nav {
+  color: inherit;
+  text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--main-text-color);
+}
+
+.items-contacts .list-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--secondary-text-color);
   text-decoration: none;
   font-style: normal;
+  text-align: center;
+}
+
+.icon-envelope {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .list-nav:hover,
@@ -215,6 +236,18 @@ img {
   letter-spacing: 0.03em;
 }
 
+.div-feature {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
+.icon-antenna {
+}
+
 /* Чем мы занимаемся */
 
 .granting-section {
@@ -242,25 +275,24 @@ img {
   padding-left: 0;
 }
 
-.command-list li {
+.command-list > li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--button-color);
 }
 
-.command-list li:not(:first-child) {
+.command-list > li:not(:first-child) {
   margin-left: 30px;
 }
 
 .text {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
 .text-pade {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font-weight: 400;
   color: var(--secondary-text-color);
 }
@@ -271,6 +303,74 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.command-div {
+  padding: 30px 32px;
+}
+
+.command-list-svg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.command-anchor {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  color: var(--svg-color);
+  border-radius: 50%;
+}
+
+.command-anchor:hover,
+.command-anchor:focus {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+.command-svg {
+  fill: currentColor;
+}
+
+/* Clients */
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.items-clients {
+  color: var(--svg-color);
+}
+
+.items-clients:not(:last-child) {
+  flex-basis: calc(100% * 6 - 30px);
+}
+
+.anchor-clients {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: inherit;
+}
+
+.anchor-clients:hover,
+.anchor-clients:focus {
+  color: var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
+}
+
+.icon-group {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -334,6 +434,54 @@ img {
   color: var(--accent-text-color);
 }
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.join-div {
+  max-width: 206px;
+  margin-left: 70px;
+  flex-basis: calc(100% * 4 - 10px);
+}
+
+.join-header {
+  color: var(--footer-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.join-items > .join-anchor {
+  width: 44px;
+  height: 44px;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.join-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-anchor {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.join-anchor:hover,
+.join-anchor:focus {
+  background-color: var(--accent-text-color);
+}
+
+.join-svg {
+  fill: currentColor;
+}
+
 /* Портфолио */
 
 .section-portfolio {
@@ -368,6 +516,8 @@ img {
   color: var(--button-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-portfolio {
@@ -416,4 +566,10 @@ img {
 .link-portfolio {
   display: block;
   text-decoration: none;
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }

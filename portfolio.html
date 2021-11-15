@@ -30,9 +30,16 @@
                 </ul>
             </nav>
             <ul class="items list">
-                <li class="items-contacts"><a href="mailto:info@devstudio.com" class="list-nav">info@devstudio.com</a>
+                <li class="items-contacts"><a href="mailto:info@devstudio.com" class="list-nav">
+                        <svg class="icon-envelope" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
                 </li>
-                <li class="items-contacts"><a href="tel:+380961111111" class="list-nav">+38 096 111 11 11</a></li>
+                <li class="items-contacts"><a href="tel:+380961111111" class="list-nav">
+                        <svg class="icon-smartphone" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -136,17 +143,44 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <a href="/" class="footer-logo">
-                <span class="logo-span">Web</span>Studio
-            </a>
-            <address>
-                <ul class="list about footer-list">
-                    <li><a href="" class="list-link-span">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="list-link">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="list-link">+38 096 111 11 11</a></li>
+        <div class="container container-footer">
+            <div class="address-div">
+                <a href="/" class="footer-logo">
+                    <span class="logo-span">Web</span>Studio
+                </a>
+                <address>
+                    <ul class="list about footer-list">
+                        <li><a href="" class="list-link-span">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="list-link">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="list-link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="join-div">
+                <h2 class="join-header">присоединяйтесь</h2>
+                <ul class="list join-list">
+                    <li class="join-items"><a href="" class="join-anchor">
+                            <svg class="join-svg" height="20" wight="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="join-items"><a href="" class="join-anchor">
+                            <svg class="join-svg" height="20" wight="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="join-items"><a href="" class="join-anchor">
+                            <svg class="join-svg" height="20" wight="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="join-items"><a href="" class="join-anchor">
+                            <svg class="join-svg" height="20" wight="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
