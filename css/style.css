@@ -237,15 +237,15 @@ img {
 }
 
 .div-feature {
+  display: flex;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
-}
-
-.icon-antenna {
+  /* padding: 25px 100px; */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Чем мы занимаемся */
@@ -442,7 +442,7 @@ img {
 .join-div {
   max-width: 206px;
   margin-left: 70px;
-  flex-basis: calc(100% * 4 - 10px);
+  /* flex-basis: calc(100% / 4 - 10px); */
 }
 
 .join-header {
@@ -463,7 +463,11 @@ img {
 
 .join-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+.join-items:not(:last-child) {
+  margin-right: 10px;
 }
 
 .join-anchor {
